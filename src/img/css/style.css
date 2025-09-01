@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+* {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: white;
+  overflow-x: hidden;
+}
+
+header {
+  background: url("header-bg.jpg") no-repeat center center/cover;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+nav {
+  background: #005bb5;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  padding: 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: black;
+}
+section {
+  padding: 50px 30px;
+  color: black;
+}
+
+#services ul {
+  list-style: none;
+  text-decoration: none;
+  padding: 0px;
+  justify-content: center;
+  display: flex;
+  padding: 0px;
+}
+
+.grid {
+  padding: 10px 20px 20px 20px;
+  border-color: #005bb5;
+  border-style: solid;
+  border-radius: 10px;
+  margin: 2px;
+}
+
+.grid img {
+  width: 50px;
+  padding: 0px 0px 10px 0px;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.gallery-container img {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+.testimonials {
+  background: #e0f2ff;
+  padding: 50px;
+}
+.testimonial {
+  font-style: italic;
+  margin: 20px auto;
+  width: 60%;
+}
+.contact-form {
+  width: 50%;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+footer {
+  background: #005bb5;
+  color: white;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
