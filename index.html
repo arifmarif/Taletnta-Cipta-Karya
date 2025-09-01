@@ -16,58 +16,76 @@
     <!--PASTE YOUR CODE HERE END -->
   </head>
   <body>
-    <header><img src="src/img/Talenta_Cipta_Bawah.png"</header>
+    <header>
+      <img src="src/img/Talenta_Cipta_Bawah.png" alt="Logo" />
+      <nav>
+        <ul>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="#services">Layanan</a></li>
+          <li><a href="#gallery">Galeri</a></li>
+          <li><a href="#testimonials">Testimoni</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <nav>
-      <ul>
-        <li><a href="#about">Tentang Kami</a></li>
-        <li><a href="#services">Layanan</a></li>
-        <li><a href="#gallery">Galeri</a></li>
-        <li><a href="#testimonials">Testimoni</a></li>
-        <li><a href="#contact">Kontak</a></li>
-      </ul>
-    </nav>
-
-    <section id="about">
-      <h2>Tentang Kami</h2>
-      <p>
-        Selamat datang di Yayasan Talenta Cipta Karya tempat di mana kamu akan
-        mendapatkan pembelajaran berkualitas yang akan membuka peluang karirmu.
-        Kami adalah LPK (Lembaga Pelatihan Kerja) dan LKP (Lembaga Kursus dan
-        Pelatihan) yang telah memiliki izin resmi. Tersedia berbagai kursus dan
-        pelatihan yang dirancang untuk membekali kamu dengan keterampilan
-        praktis yang dibutuhkan di dunia kerja.
-      </p>
+    <section class="about" id="about">
+      <div class="about-container">
+        <h2>Tentang Kami</h2>
+        <p>
+          Selamat datang di <strong>Yayasan Talenta Cipta Karya</strong>, tempat
+          di mana kamu akan mendapatkan pembelajaran berkualitas yang akan
+          membuka peluang karirmu. Kami adalah
+          <strong>LPK (Lembaga Pelatihan Kerja)</strong> dan
+          <strong>LKP (Lembaga Kursus dan Pelatihan)</strong> yang telah
+          memiliki izin resmi. <br /><br />
+          Tersedia berbagai kursus dan pelatihan yang dirancang untuk membekali
+          kamu dengan keterampilan praktis yang dibutuhkan di dunia kerja.
+        </p>
+      </div>
     </section>
 
-    <section id="services">
-      <h2>Layanan Kami</h2>
-      <ul>
+    <section class="services" id="services">
+      <h2>LAYANAN KAMI</h2>
+      <div class="services-container">
         <div class="grid">
           <img src="src/img/barista.png" alt="barista" />
-          <li>Pelatihan Barista</li>
-          <p>asdasd</p>
+          <h3>Pelatihan Barista</h3>
+          <p>
+            Mempelajari berbagai hal mengenai kopi. Mulai dari sejarah,
+            jenis-jenis kopi, dan materi lainnya. Di sini kamu juga akan
+            mempelajari teknik dasar hingga lanjutan dalam meracik kopi.
+          </p>
         </div>
         <div class="grid">
-          <img src="src/img/connection.png" alt="barista" />
-          <li>Kursus Komputer</li>
-          <p>asdasd</p>
+          <img src="src/img/connection.png" alt="komputer" />
+          <h3>Kursus Komputer</h3>
+          <p>
+            Dari pemula hingga tingkat lanjutan, kursus komputer kami mencakup
+            berbagai topik: Microsoft Office, pemrograman, hingga desain grafis.
+          </p>
         </div>
         <div class="grid">
-          <img src="src/img/book.png" alt="barista" />
-          <li>Bimbingan Belajar</li>
-          <p>asdasd</p>
+          <img src="src/img/book.png" alt="bimbel" />
+          <h3>Bimbingan Belajar</h3>
+          <p>
+            Mendukung siswa memahami materi sekolah dengan pendekatan
+            interaktif, menyenangkan, dan mudah dipahami.
+          </p>
         </div>
         <div class="grid">
-          <img src="src/img/digital.png" alt="barista" />
-          <li>Digital Marketing</li>
-          <p>asdasd</p>
+          <img src="src/img/digital.png" alt="digital marketing" />
+          <h3>Digital Marketing</h3>
+          <p>
+            Belajar SEO, media sosial, iklan online, dan analitik untuk
+            memajukan bisnis maupun karirmu di era digital.
+          </p>
         </div>
-      </ul>
+      </div>
     </section>
 
-    <section id="gallery">
-      <h2>Galeri</h2>
+    <section class="gallery" id="gallery">
+      <h2>GALERI</h2>
       <div class="gallery-container">
         <img src="barista.jpg" alt="Pelatihan Barista" />
         <img src="computer.jpg" alt="Kursus Komputer" />
@@ -76,29 +94,33 @@
       </div>
     </section>
 
-    <section id="testimonials">
-      <h2>Testimoni</h2>
-      <p class="testimonial">
+    <section class="testimonial-section" id="testimonials">
+      <h2>TESTIMONI</h2>
+      <div class="testimonial-card">
         "Pelatihannya sangat bermanfaat! Saya kini bekerja sebagai barista di
-        kafe ternama." - Andi
-      </p>
-      <p class="testimonial">
+        kafe ternama."
+        <br />— Andi
+      </div>
+      <div class="testimonial-card">
         "Kursus komputer ini benar-benar meningkatkan skill saya dalam dunia
-        kerja." - Budi
-      </p>
+        kerja."
+        <br />— Budi
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Kontak Kami</h2>
+    <section class="contact" id="contact">
+      <h2>KONTAK KAMI</h2>
       <div class="contact-form">
         <form>
-          <label for="name">Nama:</label><br />
-          <input type="text" id="name" name="name" required /><br /><br />
-          <label for="email">Email:</label><br />
-          <input type="email" id="email" name="email" required /><br /><br />
-          <label for="message">Pesan:</label><br />
-          <textarea id="message" name="message" rows="4" required></textarea
-          ><br /><br />
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Pesan:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
           <button type="submit">Kirim</button>
         </form>
       </div>

@@ -10,40 +10,56 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding-top: 120px;
   text-align: center;
   background: white;
   overflow-x: hidden;
 }
 
 header {
-  background: url("header-bg.jpg") no-repeat center center/cover;
-  color: white;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-nav {
-  background: #005bb5;
-  padding: 10px;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
   z-index: 1000;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-nav ul {
+
+header img {
+  max-width: 250px; /* atur ukuran logo */
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Nav di dalam header */
+header nav {
+  background: #005bb5;
+  padding: 5px 0;
+}
+
+header nav ul {
   list-style: none;
+  margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
 }
-nav ul li {
-  padding: 15px;
+
+header nav ul li {
+  margin: 0 15px;
 }
-nav ul li a {
+
+header nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
-nav ul li a:hover {
+
+header nav ul li a:hover {
   color: black;
 }
 section {
@@ -51,60 +67,179 @@ section {
   color: black;
 }
 
-#services ul {
-  list-style: none;
-  text-decoration: none;
-  padding: 0px;
-  justify-content: center;
+.about {
+  background: linear-gradient(135deg, #f0f9ff, #e0f2ff);
+  padding: 60px 20px;
   display: flex;
-  padding: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  max-width: 900px;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 91, 181, 0.2);
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #005bb5;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.services h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #005bb5;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
 }
 
 .grid {
-  padding: 10px 20px 20px 20px;
-  border-color: #005bb5;
-  border-style: solid;
+  padding: 20px;
+  border: 2px solid #005bb5;
   border-radius: 10px;
-  margin: 2px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .grid img {
-  width: 50px;
-  padding: 0px 0px 10px 0px;
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   GALERI
+========================= */
+.gallery {
+  background: linear-gradient(135deg, #fff, #f0f9ff);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 28px;
+  color: #005bb5;
+  margin-bottom: 30px;
 }
 
 .gallery-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
+
 .gallery-container img {
-  width: 30%;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s;
 }
+
 .gallery-container img:hover {
   transform: scale(1.05);
 }
-.testimonials {
-  background: #e0f2ff;
-  padding: 50px;
+
+/* =========================
+   TESTIMONI
+========================= */
+.testimonial-section {
+  background: linear-gradient(135deg, #e0f2ff, #f0f9ff);
+  padding: 60px 20px;
+  text-align: center;
 }
-.testimonial {
-  font-style: italic;
+
+.testimonial-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #005bb5;
+}
+
+.testimonial-card {
+  max-width: 700px;
   margin: 20px auto;
-  width: 60%;
-}
-.contact-form {
-  width: 50%;
-  margin: auto;
-  background: white;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  font-style: italic;
+  line-height: 1.6;
 }
+
+/* =========================
+   KONTAK
+========================= */
+.contact {
+  background: linear-gradient(135deg, #f0f9ff, #e0f2ff);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #005bb5;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.contact-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  background: #005bb5;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #004494;
+}
+
 footer {
   background: #005bb5;
   color: white;
@@ -112,4 +247,37 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
+}
+
+/* Untuk layar kecil (HP) */
+@media screen and (max-width: 576px) {
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-container {
+    padding: 20px;
+  }
+
+  .about h2 {
+    font-size: 24px;
+  }
+
+  .about p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
 }
