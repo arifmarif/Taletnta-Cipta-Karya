@@ -279,10 +279,48 @@ section {
 footer {
   background: #005bb5;
   color: white;
-  padding: 15px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.footer-container p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.footer-container .social-links {
+  margin: 12px 0;
+}
+
+.footer-container .social-links a {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.footer-container .social-links img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1); /* putihkan icon biar match bg */
+  transition: transform 0.3s;
+}
+
+.footer-container .social-links img:hover {
+  transform: scale(1.2);
+}
+
+.footer-container .site-link a {
+  color: #e0f2ff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-container .site-link a:hover {
+  text-decoration: underline;
 }
 
 /* Untuk layar kecil (HP) */
@@ -339,9 +377,5 @@ footer {
   /* Tampilkan menu saat aktif */
   header nav.active ul {
     display: flex;
-  }
-
-  footer {
-    padding: 10px;
   }
 }
