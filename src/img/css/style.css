@@ -10,7 +10,7 @@
 
 body {
   margin: 0;
-  padding-top: 200px;
+  padding-top: 150px;
   text-align: center;
   background: white;
   overflow-x: hidden;
@@ -89,7 +89,7 @@ section {
 }
 
 .about-container {
-  max-width: 900px;
+  max-width: 1000px;
   background: white;
   padding: 30px 40px;
   border-radius: 15px;
@@ -314,7 +314,7 @@ footer {
   }
 
   .contact-form {
-    padding: 20px;
+    padding: 50px;
   }
 
   header nav ul {
@@ -339,5 +339,14 @@ footer {
   /* Tampilkan menu saat aktif */
   header nav.active ul {
     display: flex;
+  }
+
+  footer {
+    background: #005bb5;
+    color: white;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
   }
 }
